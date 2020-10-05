@@ -1,0 +1,21 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+shopbridge-frontend/node_modules
+shopbridge-frontend/.pnp
+shopbridge-backend/__pycache__
+shopbridge-backend/.idea
+
+# production
+shopbridge-frontend/build
+
+# misc
+shopbridge-frontend/.DS_Store
+shopbridge-frontend/.env.local
+shopbridge-frontend/.env.development.local
+shopbridge-frontend/.env.test.local
+shopbridge-frontend/.env.production.local
+
+shopbridge-frontend/npm-debug.log*
+shopbridge-frontend/yarn-debug.log*
+shopbridge-frontend/yarn-error.log*
