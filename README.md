@@ -15,10 +15,10 @@ Project uses PostgresQL as database. Backend service is made using Python Flask 
 
 Database used here is PostgresQL. Open Terminal at Project folder and follow below steps to configure database -
 
-  1. Login to Postgres CLI : psql -U <username>
+  1. Login to Postgres CLI : psql -U (username)
   2. create database by using : create database shopbridgedb;
   3. Exit postgres cli by ctrl+D or \q
-  4. Restore dump by : psql -U <username> shopbridgedb < shopbridgedb
+  4. Restore dump by : psql -U (username) shopbridgedb < shopbridgedb
   5. Optionally, You can also follow sql commands listed in file "database_scripts.sql" to setup database.
 
 ### Setup Backend (Gunicorn)
@@ -38,7 +38,7 @@ After=network.target
 
 [Service]
 User=vinay.rastogi
-WorkingDirectory=/path/to/ThinkBridge/shopbridge-backend
+WorkingDirectory=/path/to/project/folder/shopbridge-backend
 ExecStart=/path/to/virtual/env/bin/gunicorn -b 0.0.0.0:8090 -w 4 main:app
 Restart=always
 
