@@ -1,7 +1,7 @@
 # ShopBridge
 
 ShopBridge is the assessment containing 2 pages to add item to inventory, delete item from inventory and see detailed view of the item.
-Project uses PostgresQL as database. Backend service is made using Python Flask and Frontend service is made using React.
+Project uses PostgresQL as database. Backend service is made using Python Flask and Frontend service is made using React with node version 12.
 
 # Screenshots
 ![Screenshot](screenshots/Screenshot-1.png)
