@@ -4,10 +4,10 @@ ShopBridge is the assessment containing 2 pages to add item to inventory, delete
 Project uses PostgresQL as database. Backend service is made using Python Flask and Frontend service is made using React.
 
 # Screenshots
-![alt text](screenshots/Screenshot-1.png)
-![alt text](screenshots/Screenshot-2.png)
-![alt text](screenshots/Screenshot-3.png)
-![alt text](screenshots/Screenshot-4.png)
+![Screenshot](screenshots/Screenshot-1.png)
+![Screenshot](screenshots/Screenshot-2.png)
+![Screenshot](screenshots/Screenshot-3.png)
+![Screenshot](screenshots/Screenshot-4.png)
 
 # Below are steps to Setup this Project
 
@@ -65,6 +65,16 @@ ProxyPassReverse "/shopbridge-backend" "http://127.0.0.1:8090"
   7. sudo service apache2 restart
   8. Now backend service is hosted at - http://localhost/shopbridge-backend/
 
+### Backend Unit Testing
+
+4 test cases has been designed. pytest has been used to perform the testing. Open Terminal at Project folder and follow below steps -
+
+  1. cd shopbridge-backend/
+  2. pytest -q unit_test.py
+  3. Verify if all 4 test have Passed.
+
+![alt text](screenshots/unit-test.png)
+
 ### Setup Frontend
 
 We will make a production build and deploy at basepath http://localhost/shopbridge/. If you want to change the basepath to something different then change "homepage" parameter in package.json and Router basename in App.js. Also, if you deployed your backend other than the endpoint stated above, please change file - ".env.production".
@@ -79,4 +89,4 @@ Open Terminal at Project folder and follow below steps -
 
 Now service is hosted at - http://localhost/shopbridge/
 
-![alt text](screenshots/Screenshot-1.png)
+![Screenshot](screenshots/Screenshot-1.png)

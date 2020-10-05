@@ -5,6 +5,7 @@ shopbridge-frontend/node_modules
 shopbridge-frontend/.pnp
 shopbridge-backend/__pycache__
 shopbridge-backend/.idea
+shopbridge-backend/.pytest_cache
 
 # production
 shopbridge-frontend/build
