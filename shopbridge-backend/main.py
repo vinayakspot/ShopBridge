@@ -64,8 +64,8 @@ def get_item(item_id):
             }
             return json.dumps(data)
         else:
-            resp = jsonify({'message': 'Database Error'})
-            resp.status_code = 500
+            resp = jsonify({'message': 'No data with associated id'})
+            resp.status_code = 404
             return resp
     except Exception as e:
         resp = jsonify({'message': str(e)})
